@@ -1,0 +1,738 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICTAS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- <section id="main">
+      <div class="mainimg"></div>
+      <h1>ICT@S</h1>
+      <p class="panime">Technical club of ICT</p>
+    </section> -->
+
+    <section id="main">
+      <!-- <img src="images/main.jpg" alt="" srcset="" /> -->
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ICT@S</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active active1" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pillars</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Roadmap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main-container">
+        <h1>ICT@S</h1>
+        <p class="panime">Technical club of ICT..!</p>
+
+        <a class="ct-btn-scroll" href="#about"
+          ><img
+            alt="Arrow Down Icon"
+            src="https://raw.githubusercontent.com/solodev/scroll-down-anchor/master/images/arrow-down-1.png"
+        /></a>
+      </div>
+    </section>
+
+    <section>
+      <a class="btarrow">
+        <i class="fa-solid fa-chevron-up fa-2x arrow"></i>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h1 class="abouth1">About</h1>
+      <div class="about-container">
+        <div class="about-img">
+          <img src="images/ICT-desc.jpg" alt="" srcset="" />
+        </div>
+        <div class="about">
+          <h2>ICT Department in SASTRA</h2>
+          <p>
+            In 2006 , B.Tech program in Information & Communication Technology
+            was Introduced in SASTRA. This B.Tech. programme is a proper blend
+            of communication engineering and Information Technology.
+          </p>
+          <h2>ICT@S</h2>
+          <p>
+            ICT@S (Information and Communication Technology @ SASTRA) was
+            established in the year 2010. The association is headed by Muthaiah
+            R and is run by the elected board members.Throughout the year, ICT@S
+            conducts a plethora of events which engages the smartest minds
+            across the university. ICTAS is a platform to develop skills and
+            also to help the juniors in different aspects as well.
+          </p>
+          <h2>Tech Carnival</h2>
+          <p>
+            Tech Carnival has a plethora of competitions from a variety of
+            streams- technical, Communication, management and fun events thereby
+            attracting students from different fields.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="text-center content-section"
+      id="teams"
+      style="padding: 2%; margin: 2%"
+    >
+      <div class="container">
+        <div class="row">
+          <h2>Meet The Team</h2>
+          <hr />
+          <div class="col-lg-8 mx-auto">
+            <!-- Role Taba -->
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="members">
+                  <li
+                    id="filter-coordinators"
+                    class="x active"
+                    onclick="changeMemberList(1)"
+                  >
+                    TECH TEAM
+                  </li>
+                  <li id="filter-core" class="x" onclick="changeMemberList(2)">
+                    NON-TECH TEAM
+                  </li>
+                  <li
+                    id="filter-junior"
+                    class="x"
+                    onclick="changeMemberList(3)"
+                  >
+                    PROMOTIONS TEAM
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- End of role taba -->
+
+            <div class="row" data-aos="flip-right">
+              <div class="member-coordinator" id="m-coordinator">
+                <!-- <h4>Coordinators</h4> -->
+                <div class="row">
+                  <div class="col" data-aos="fade-down">
+                    <div class="card ms-2 team-card">
+                      <h2 class="headsh2">Heads</h2>
+                      <div class="team-images">
+                        <div class="tech-images-container">
+                          <div class="tech1">
+                            <img
+                              src="images/Shashank HS.jpg"
+                              class="teamimg"
+                              alt=""
+                            />
+                            <h6 class="teamimgh5">Shashank HS</h6>
+                          </div>
+                          <div class="tech2">
+                            <img
+                              src="images/Akinapally Nithish Kumar.jpg"
+                              class="teamimg"
+                              alt=""
+                            />
+                            <h6 class="teamimgh5">Nithish Kumar</h6>
+                          </div>
+                        </div>
+                        <hr />
+                      </div>
+                      <div class="card-body">
+                        <h3>Core Members</h3>
+                        <ul
+                          style="list-style-type: none; margin: 0; padding: 0"
+                        >
+                          <li>Adarsh Kumar</li>
+                          <li>Ankireddypalli Naga Sindhuri</li>
+                          <li>Chris Rohan M</li>
+                          <li>Devata Indumathi</li>
+                          <li>Layamitra C.B.</li>
+                          <li>Midde Jaheer</li>
+                          <li>Narayanan B</li>
+                          <li>Parthiv Sai</li>
+                          <li>Srijith Bharadwaj D</li>
+                          <li>Vaikunth S</li>
+                          <li>Venkatesh P R</li>
+                          <li>Sai Shivani R</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="member-core" id="m-core" hidden>
+                <div class="row">
+                  <div class="col" data-aos="fade-down">
+                    <div class="card ms-2 team-card">
+                      <h2 class="headsh2">Heads</h2>
+                      <div class="team-images">
+                        <div class="tech-images-container">
+                          <div class="tech1">
+                            <img
+                              src="images/Gudi Vinay Reddy.jpg"
+                              class="teamimg"
+                              alt=""
+                            />
+                            <h6 class="teamimgh5">Gudi Vinay Reddy</h6>
+                          </div>
+                          <div class="tech2">
+                            <img
+                              src="images/Swetha E S.jpg"
+                              class="teamimg"
+                              alt=""
+                            />
+                            <h6 class="teamimgh5">Swetha E Sr</h6>
+                          </div>
+                        </div>
+                        <hr />
+                      </div>
+                      <div class="card-body">
+                        <h3>Core Members</h3>
+                        <ul
+                          style="list-style-type: none; margin: 0; padding: 0"
+                        >
+                          <li>Adarsh Kumar</li>
+                          <li>Ankireddypalli Naga Sindhuri</li>
+                          <li>Chris Rohan M</li>
+                          <li>Devata Indumathi</li>
+                          <li>Layamitra C.B.</li>
+                          <li>Midde Jaheer</li>
+                          <li>Narayanan B</li>
+                          <li>Parthiv Sai</li>
+                          <li>Srijith Bharadwaj D</li>
+                          <li>Vaikunth S</li>
+                          <li>Venkatesh P R</li>
+                          <li>Sai Shivani R</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--- End Of Team List -->
+
+              <div class="member-junior" id="m-junior" hidden>
+                <div class="row">
+                  <div class="col" data-aos="fade-down">
+                    <div class="card ms-2 team-card">
+                      <h2 class="headsh2">Heads</h2>
+                      <div class="team-images">
+                        <div class="tech-images-container">
+                          <div class="tech1">
+                            <img
+                              src="images/model.jpeg"
+                              class="teamimg"
+                              alt=""
+                            />
+                            <h6 class="teamimgh5">Dakshina Moorthy R</h6>
+                          </div>
+                          <div class="tech2">
+                            <img
+                              src="images/Vijayalakshmi A.jpg"
+                              class="teamimg"
+                              alt=""
+                            />
+                            <h6 class="teamimgh5">Vijayalakshmi A</h6>
+                          </div>
+                        </div>
+                        <hr />
+                      </div>
+                      <div class="card-body">
+                        <h3>Core Members</h3>
+                        <ul
+                          style="list-style-type: none; margin: 0; padding: 0"
+                        >
+                          <li>Adarsh Kumar</li>
+                          <li>Ankireddypalli Naga Sindhuri</li>
+                          <li>Chris Rohan M</li>
+                          <li>Devata Indumathi</li>
+                          <li>Layamitra C.B.</li>
+                          <li>Midde Jaheer</li>
+                          <li>Narayanan B</li>
+                          <li>Parthiv Sai</li>
+                          <li>Srijith Bharadwaj D</li>
+                          <li>Vaikunth S</li>
+                          <li>Venkatesh P R</li>
+                          <li>Sai Shivani R</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADS -->
+
+    <section id="heads">
+      <h1 class="headsh1">ICTAS Pillars</h1>
+      <div class="row row-cols-1 rowing row-cols-md-2 g-4">
+        <div class="col col1">
+          <div class="card card1">
+            <img
+              src="images/Manoj M.jpg"
+              class="card-img-top card1img"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="title">Manoj M</p>
+              <p class="role">Chairperson male</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col1">
+          <div class="card card1">
+            <img
+              src="images/Aparnaa R U.jpg"
+              class="card-img-top card1img"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="title">Aparna R U</p>
+              <p class="role">Chairperson female</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col1">
+          <div class="card card1">
+            <img
+              src="images/Smruthi M.jpg"
+              class="card-img-top card1img"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="title">Smruthi M</p>
+              <p class="role">Secretary</p>
+            </div>
+          </div>
+        </div>
+        <div class="col col1">
+          <div class="card card1">
+            <img
+              src="images/Mahesh Babu M.jpg"
+              class="card-img-top card1img"
+              alt="..."
+            />
+            <div class="card-body">
+              <p class="title">Mahesh Babu M</p>
+              <p class="role">Treasurer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline1">
+      <div class="timelin1-container">
+        <p class="timeline11">TIMELINE</p>
+        <h2>Road Map</h2>
+        <p class="pcolor">
+          Our team working hardly to make achieve the timeline.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="container left right1">
+          <div class="content">
+            <h6>PHASE 1</h6>
+            <p>Website launch</p>
+          </div>
+        </div>
+        <div class="container right right1">
+          <div class="content">
+            <h6>PHASE 1</h6>
+            <p>Token Creation</p>
+            <p>Deploy BHT Token on BSC</p>
+          </div>
+        </div>
+        <div class="container left right1">
+          <div class="content">
+            <h6>PHASE 1</h6>
+            <p>Whitepaper launch</p>
+          </div>
+        </div>
+        <div class="container right right1">
+          <div class="content">
+            <h6>PHASE 1</h6>
+            <p>Pre-sale Launch</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h6>PHASE 1</h6>
+            <p>Social Media Marketing Push</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h6>PHASE 1</h6>
+            <p>Collaboration with Influencers</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h6>PHASE 1</h6>
+            <p>Social Media Marketing Push</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h6>PHASE 2</h6>
+            <p>Collaboration with Influencers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAROUSEL -->
+    <section id="car">
+      <h1>GALLERY</h1>
+      <hr />
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="6"
+            aria-label="Slide 7"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="7"
+            aria-label="Slide 8"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="8"
+            aria-label="Slide 9"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item car1 active">
+            <img src="images/wk1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item car1">
+            <img src="images/wk2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item car1">
+            <img src="images/wk3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item car1">
+            <img src="images/wk4.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item car1">
+            <img src="images/wk5.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item car1">
+            <img src="images/wk6.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item car1">
+            <img src="images/wk7.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item car1">
+            <img src="images/wk8.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item car1">
+            <img src="images/wk9.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="">
+            <div>
+              <p class="contactp">CONTACT</p>
+              <p class="getin">Get In Touch</p>
+              <p class="anyqn">
+                Any question? Reach out to us and we’ll get back to you shortly.
+              </p>
+              <ul class="contact-info-alt">
+                <li
+                  class="animated fadeInUp"
+                  data-animate="fadeInUp"
+                  data-delay=".5"
+                  style="visibility: visible; animation-delay: 0.5s"
+                >
+                  <i class="fas fa-envelope"></i>ICTAS
+                </li>
+                <!-- <li><i class="fas fa-flag"></i>India</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="">
+            <form method="post" action="mailto:contact@bee--hive.com">
+              <input
+                type=""
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Name"
+              />
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Email"
+              />
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="">
+            <img src="images/postbox.png" class="postbox" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="dont">
+        <div class="dont-container">
+          <div>
+            <p class="dont1">Don’t miss out, Stay updated</p>
+            <p class="dont2">
+              Subscribe to our newsletter and receive update about ICTAS
+            </p>
+          </div>
+
+          <div class="social-links">
+            <a href="https://t.me/+I7fp4dVuECYzZGNl"
+              ><i class="fab social fa-telegram"></i
+            ></a>
+            <a href="https://twitter.com/___T_R_E_E___"
+              ><i class="fab social fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/____t.r.e.e____/"
+              ><i class="fab social fa-instagram"></i
+            ></a>
+            <!-- <a href="#"><i class="fab social fa-linkedin-in"></i></a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="disclaimer">
+        <p class="dis1">Disclaimer !</p>
+        <p class="dis2">
+          The information provided on this Website is only for educational
+          purposes and also does not constitute investment advice or financial
+          advice. Do not trade with money that you cannot afford to lose. Do not
+          sell your Property, Car, Mobile, or any asset to invest in
+          cryptocurrency. It's highly risky.
+        </p>
+      </div> -->
+    </section>
+
+    <section id="copyright">
+      <img src="images/footer.png" alt="" />
+      <p>
+        © Copyright 2022 - All Rights Reserved, All trademarks, and copyrights
+        belong to their respective owners.
+      </p>
+      <hr class="hrline" />
+      <p>Made with ❤</p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

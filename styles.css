@@ -1,0 +1,671 @@
+body {
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  /* background: linear-gradient(141deg, #5f98da 0%, #1fc8db 51%, #5f98da 75%); */
+}
+
+#main {
+  /* background-color: #88bdbc; */
+  background-image: url(images/main.jpg);
+  height: 100vh;
+}
+
+/* #main img {
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 95vh;
+  position: relative;
+} */
+
+.main-container {
+  /* text-align: center; */
+  padding-top: 100px;
+  /* position: relative; */
+}
+
+.main-container h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+.nav-item {
+  font-size: larger;
+  padding-left: 10px;
+}
+.active1 {
+  border: 1px solid;
+  background-color: white;
+  color: black !important;
+  border-radius: 15px;
+  font-weight: 500;
+  padding: 6px 13px 6px 13px !important ;
+}
+.navbar-brand {
+  font-size: 25px !important;
+}
+.panime {
+  border-right: solid 3px rgba(0, 255, 0, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Grape Nuts", cursive;
+  font-size: 35px;
+  color: white;
+  font-weight: 1400;
+  position: absolute;
+  top: 0;
+  margin-top: 320px;
+  margin-left: 38%;
+}
+
+/* Animation */
+.panime {
+  animation: animated-text 4s steps(29, end) 1s 1 normal both,
+    animated-cursor 600ms steps(29, end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 380px;
+  }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(0, 255, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.ct-btn-scroll {
+  text-align: center;
+  width: 100px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-bottom: 10px;
+  padding-top: 500px;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+@media only screen and (max-device-width: 729px) {
+  .panime {
+    /* margin: 290px 0px 0px 55px; */
+    margin-left: 15%;
+    font-size: 25px;
+  }
+  @keyframes animated-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 270px;
+    }
+  }
+}
+
+.dont {
+  padding: 65px;
+  margin-left: 120px;
+  margin-right: 120px;
+  background-color: #f7f7f7;
+  background-image: linear-gradient(35deg, #2b56f5 0%, #16a1ff 100%);
+  border-radius: 6px;
+  color: white;
+}
+
+.dont1 {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.team {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.dont2 {
+  font-size: 15px;
+}
+.dont-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  place-content: center;
+}
+
+.social-links a {
+  color: black;
+  font-size: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  padding: 5px 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.disclaimer {
+  border-radius: 6px;
+  padding: 40px;
+  margin-left: 120px;
+  margin-right: 120px;
+  background-color: #f7f7f7;
+}
+
+.dis1 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+#contact {
+  padding: 80px;
+}
+
+#contact .contact-info-alt li .fas {
+  color: #16a1ff !important;
+  border: 2px solid #16a1ff;
+  line-height: 34px;
+  position: relative;
+  font-size: 20;
+  height: 38px;
+  width: 38px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 15px;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+#contact .contact-info-alt li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.contact-info-alt {
+  padding-left: 0px !important;
+}
+
+.form-control {
+  margin-bottom: 20px !important;
+}
+
+.postbox {
+  width: 300px;
+  height: 250px;
+  margin-left: 50px;
+}
+
+.contactp {
+  color: #16a1ff;
+}
+
+.getin {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.anyqn {
+  width: 80%;
+}
+
+#copyright {
+  text-align: center;
+  padding: 40px;
+}
+
+/* #copyright > p {
+} */
+
+#copyright img {
+  text-align: center;
+  margin-bottom: 15px;
+  width: 200px;
+  height: 200px;
+}
+
+.hrline {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2px;
+}
+
+/* ..... */
+#timeline1 {
+  background-color: #e7edf5;
+  padding: 40px;
+}
+
+.timeline h6 {
+  color: #16a1ff;
+}
+
+.ordernow :hover {
+  color: white !important;
+}
+
+.timeline p {
+  font-size: 20px;
+}
+
+.timeline11 {
+  color: #16a1ff;
+}
+
+.timelin1-container h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  /* background-color: #8284a5; */
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timelin1-container {
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #16a1ff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline .container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  margin: 0px;
+}
+
+/* The circles on the timeline */
+.timeline .container::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  right: -13px;
+  background-color: white;
+  /* border: 1px solid #ff9f55; */
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.timeline .left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.timeline .right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.timeline .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.timeline .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right1::after {
+  background: #2b56f5 !important;
+}
+
+/* Fix the circle for containers on the right side */
+.timeline .right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.timeline .container .content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+.abouth1 {
+  text-align: center;
+  padding-top: 50px;
+  font-family: "Dancing Script", cursive;
+  font-size: 45px;
+}
+
+.about {
+  padding: 30px;
+}
+
+.about-img {
+  padding: 30px;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#heads {
+  padding: 30px 120px 30px 120px;
+  background-color: #88bdbc;
+}
+
+.card1 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 34px !important;
+  background-color: #254e58 !important;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.card1img {
+  width: 180px !important;
+
+  margin: -36px auto 0;
+
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  vertical-align: middle;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 34px !important;
+}
+
+.title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+
+.role {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.team-card {
+  /* padding: 20px;
+  width: 600px; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.teamimg {
+  width: 150px !important;
+  /* margin: -36px auto 0; */
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  vertical-align: middle;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 14px !important;
+}
+
+.tech-images-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.tech-images-container img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#members {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+}
+
+#members li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 18px 12px 18px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  margin: 0 4px 10px 4px;
+  background-color: aliceblue;
+  color: rgb(0, 41, 75);
+  border-radius: 4px;
+}
+
+#members li:hover,
+#members li.active {
+  background: rgb(0, 41, 75);
+  color: aliceblue;
+}
+
+#mem li:last-child {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.arrow {
+  color: white;
+  visibility: hidden;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 8px 10px 8px 10px;
+  background-color: #ff9f55;
+  z-index: 1;
+}
+
+#car {
+  padding: 80px;
+}
+
+#car h1 {
+  text-align: center;
+}
+
+.car1 {
+  height: 80vh !important;
+}
+
+.car1 img {
+  /* background-position: 100% 100%; */
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  max-width: 100%;
+  height: 600px;
+  border-radius: 5px;
+}
+
+.carousel-inner .item {
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s;
+}
+
+.headsh1 {
+  text-align: center;
+  color: white;
+}
+
+.teamimgh5 {
+  margin-top: 10px;
+  padding: 1px;
+}
+
+.headsh2 {
+  border: 1px solid;
+  padding: 2px;
+}
+
+@media only screen and (max-device-width: 729px) {
+  .headsh1 {
+    margin-bottom: 37px;
+  }
+  .car1 {
+    height: auto !important;
+  }
+  .car1 img {
+    height: 209px;
+  }
+  #car {
+    padding: 10px;
+  }
+  #heads {
+    padding: 50px 0px;
+  }
+  .rowing {
+    margin-right: 0px !important;
+  }
+  .col1 {
+    padding: 0px !important;
+  }
+  .card1 {
+    width: 80%;
+    padding: 0px;
+  }
+  .about-img {
+    padding: 10px;
+  }
+  .about-container {
+    display: block;
+  }
+  .about-img img {
+    height: auto;
+  }
+
+  .disclaimer {
+    margin: 20px;
+    padding: 40px;
+  }
+  .dont {
+    margin: 20px;
+    padding: 40px;
+  }
+  .dont-container {
+    display: block;
+  }
+  #contact {
+    padding: 40px;
+  }
+  .postbox {
+    margin: 0px;
+  }
+  .hrline {
+    width: 70%;
+  }
+  .teamimg {
+    width: 120px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  #timeline1 {
+    padding: 5px 0px 25px 9px;
+  }
+  .timelin1-container {
+    padding-left: 0px;
+  }
+  .timeline .right::after {
+    left: 15px;
+  }
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .timeline .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .timeline .right {
+    left: 0%;
+  }
+}
